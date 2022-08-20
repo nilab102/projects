@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hhdd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginBottom="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="114dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="414dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="107dp"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/minus"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="136dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="119dp"
+        android:ems="10"
+        android:hint="Number2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/minus"
+        app:layout_constraintEnd_toStartOf="@+id/minus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="81dp"
+        android:text="*"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="17dp"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplication" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="81dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/multiplication"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

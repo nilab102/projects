@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2536114434",
+    "project_id": "newapp-e44e1",
+    "storage_bucket": "newapp-e44e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2536114434:android:71db03eb1bb36442aa9a1b",
+        "android_client_info": {
+          "package_name": "com.example.newshaunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2536114434-4ic52ikivm46nh9po6kljm17vclg4mgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPDuYg7ZW_1Tbw6qYqMcjAkU5gOH_SGRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2536114434-4ic52ikivm46nh9po6kljm17vclg4mgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

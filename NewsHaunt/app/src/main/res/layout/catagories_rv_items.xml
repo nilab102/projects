@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="8dp">
+    <!--    relative layout in cardview-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<!--        imageview IV repreesnt Tamge view tv textview-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/idIVCatagory"
+            android:src="@color/Yellow"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+<!--        image r majhe lika-->
+        <TextView
+            android:id="@+id/idRTVcatagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Catagory"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
